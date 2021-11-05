@@ -61,7 +61,7 @@ int main(){
                 cout << "\n<< Convert Peso to Dollar >>" << endl;
                 phptodollar(); //Show the exchange rate by calling the function.
                 //Promt the user and take PHP peso input.
-                cout << "\nEneter a PHP peso amount (without the peso sign, commas or a decimal): ";
+                cout << "Enter a PHP peso amount (without the peso sign, commas or a decimal): ";
                 cin >> pesoIn;
                 pesoToDollar(conversionRate2, pesoIn); //Show the conversion by calling the function.
                 promptAndWait();
