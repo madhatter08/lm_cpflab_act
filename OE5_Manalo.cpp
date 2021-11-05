@@ -14,6 +14,9 @@ int rvrsd_int(int n);
 
 int main(){
     int function;
+    char ch;
+
+do{
     cout << endl;
     cout << "<< Cryptographic System >>" << endl;
     cout << "[1] Reverse a String" << endl;
@@ -30,6 +33,9 @@ int main(){
             getline(cin, word);
             rvrsd_str();
             cout << endl;
+
+            cout << "Press [Y] to try again or [N] to exit: ";
+            cin >> ch;
             break;
         }
         case 2:{
@@ -42,6 +48,9 @@ int main(){
             reverse = rvrsd_int(num);
             cout << "Reversed set of numbers      : " << reverse << endl;
             cout << endl;
+
+            cout << "Press [Y] to try again or [N] to exit: ";
+            cin >> ch;
             break;
         }
         case 3:{
@@ -49,11 +58,14 @@ int main(){
             break;
         }
         default:{
-            cout << "Invalid function..." << endl;
+            cout << "Invalid function...Please try again!" << endl;
+            cout << "Press [Y] to try again or [N] to exit: ";
+            cin >> ch;
             break;
         }
     }
-
+    
+}while(ch == 'Y' || ch == 'y');
     return 0;
 }
 
