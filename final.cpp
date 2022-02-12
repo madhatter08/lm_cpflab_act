@@ -111,8 +111,6 @@ double oztokg(int in){
 }
 
 
-
-
 // main method
 int main(){
 	
